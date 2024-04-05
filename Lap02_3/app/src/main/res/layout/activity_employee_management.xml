@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý nhân viên" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã NV" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên NV" />
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_full_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chính thức" />
+
+        <RadioButton
+            android:id="@+id/radio_part_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời vụ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAddEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập NV"
+        android:onClick="addNewEmployee"/>
+
+    <ListView
+        android:id="@+id/listViewEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
